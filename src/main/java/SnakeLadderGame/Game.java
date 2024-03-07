@@ -73,9 +73,12 @@ public class Game {
 
             int newposition = player.getPosition() + val;
 
-            //if match is about to end and winning player throws dice
-            //and gets position beyond the board size
-            // let the position of player be same as it was earlier
+            /*
+            if match is about to end and winning player throws dice
+            and gets position beyond the board size
+            let the position of player be same as it was earlier
+            */
+
             if(newposition > board.getEnd()){
                 player.setPosition(player.getPosition());
                 players.offer(player);
